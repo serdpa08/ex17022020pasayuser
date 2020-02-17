@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+
+.contenedorfleximagenes {
+  display: flex;
+  align-items: flex-start;
+}
+.contenedorfleximagenes__imagen1pasayuser {
+  width: 50%;
+  height: auto;
+  padding: 5px;
+}
+
+/*# sourceMappingURL=estilos3pasayuser.css.map */

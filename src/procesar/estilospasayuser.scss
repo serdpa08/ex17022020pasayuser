@@ -1,0 +1,213 @@
+nav{
+  display: grid;
+  grid-template-columns: auto auto auto auto ;
+  border: 1px solid black;
+
+
+  .linkpasayuser{
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+
+  }
+}
+
+@media screen and (max-width: 650px){
+  nav{
+    display: grid;
+    grid-template-columns: auto;
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+  %borde1{
+    border: 1px solid black;
+    text-align: center;
+    line-height: 200px;
+    margin-bottom: 20px;
+  }
+  .contenedorgrid {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 20px;
+    @extend %borde1;
+
+    &__cabecerapasayuser {
+      @extend %borde1;
+      min-height: 200px;
+
+    }
+
+    &__aside1pasayuser {
+      @extend %borde1;
+      height: 200px;
+    }
+
+    &__aside2pasayuser {
+      @extend %borde1;
+      height: 200px;
+    }
+
+    &__mainpasayuser {
+      @extend %borde1;
+      height: 200px;
+    }
+
+    &__footerpasayuser {
+      @extend %borde1;
+      height: 200px;
+    }
+  }
+}
+
+@media screen and (min-width: 700px) {
+  %borde{
+    border: 1px solid black;
+    text-align: center;
+  }
+  .contenedorgrid {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    padding: 20px;
+    @extend %borde;
+
+    &__cabecerapasayuser {
+      grid-column: 1 / 4;
+      @extend %borde;
+      min-height: 200px;
+      line-height: 200px;
+    }
+
+    &__aside1pasayuser {
+      grid-column: 1 / 2;
+      @extend %borde;
+      height: 600px;
+      line-height: 600px;
+    }
+
+    &__aside2pasayuser {
+      grid-column: 3 / 4;
+      @extend %borde;
+      height: 600px;
+      line-height: 600px;
+    }
+
+    &__mainpasayuser {
+      grid-column: 2 / 3;
+      @extend %borde;
+      height: 600px;
+      line-height: 600px;
+    }
+
+    &__footerpasayuser {
+      grid-column: 1 / 4;
+      @extend %borde;
+      height: 200px;
+      line-height: 200px;
+    }
+  }
+}
+
+
+@media screen and (min-width: 700px) {
+  %borde{
+    border: 1px solid black;
+    text-align: center;
+  }
+  .contenedorgrid2 {
+    display: grid;
+    grid-template-columns: 20vw 60vw 20vw;
+    padding: 20px;
+    @extend %borde;
+
+    &__cabecerapasayuser {
+      grid-column: 1 / 4;
+      @extend %borde;
+      min-height: 200px;
+      line-height: 200px;
+    }
+    &__contenedorflexpasayuser {
+      grid-column: 1 / 4;
+      display: flex;
+
+        width: 100vw;
+
+          &__aside {
+
+             width: 30vw;
+            @extend %borde;
+            height: 600px;
+            line-height: 600px;
+           }
+
+      &__main {
+
+        width: 70vw;
+        grid-column: 2 / 3;
+        @extend %borde;
+        height: 600px;
+        line-height: 600px;
+      }
+    }
+
+    &__footerpasayuser {
+      grid-column: 1 / 4;
+      @extend %borde;
+      height: 200px;
+      line-height: 200px;
+    }
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+  %borde1{
+    border: 1px solid black;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .contenedorgrid2 {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 20px;
+    @extend %borde1;
+
+    &__cabecerapasayuser {
+
+      @extend %borde1;
+      min-height: 100px;
+      line-height: 100px;
+    }
+    &__contenedorflexpasayuser {
+
+      display: block;
+
+      width: 100%;
+
+      &__aside {
+
+        width: 100%;
+        @extend %borde1;
+        height: 100px;
+        line-height: 100px;
+      }
+
+      &__main {
+
+        width: 100%;
+
+        @extend %borde1;
+        height: 300px;
+        line-height: 300px;
+      }
+    }
+
+    &__footerpasayuser {
+
+      @extend %borde1;
+      height: 100px;
+      line-height: 100px;
+    }
+  }
+}

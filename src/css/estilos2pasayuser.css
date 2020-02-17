@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 1280px) {
+  .contenedorgridimagenes {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+  }
+  .contenedorgridimagenes__imagenpasayuser {
+    width: 100%;
+    height: auto;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1280px) {
+  .contenedorgridimagenes {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  .contenedorgridimagenes__imagenpasayuser {
+    width: 100%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 600px) {
+  .contenedorgridimagenes {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  .contenedorgridimagenes__imagenpasayuser {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/*# sourceMappingURL=estilos2pasayuser.css.map */

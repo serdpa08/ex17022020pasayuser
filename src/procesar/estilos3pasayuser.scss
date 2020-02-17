@@ -1,0 +1,15 @@
+*{
+  box-sizing: border-box;
+}
+.contenedorfleximagenes{
+  display: flex;
+  align-items: flex-start;
+
+
+
+  &__imagen1pasayuser{
+    width: 50%;
+    height: auto;
+    padding: 5px;
+  }
+}
